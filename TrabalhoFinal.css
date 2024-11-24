@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4; 
+    color: #333; 
+    background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/10041215-ilustracao-folhas-verdes-em-de-fundo-verde-claro-vetor.jpg);
+    box-shadow: 6px 6px 12px rgba(0 , 0 , 0 , 1);
+}
+
+
+header {
+    
+    background-color: #3E7F45; 
+    color: white; 
+    box-shadow: 0px 6px 12px rgba(0 , 0 , 0 , 1);
+    border-radius: 10px;  
+    padding: 20px;
+    display: flex;
+    text-align: center;
+        
+}
+     
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    max-width: 200em;
+    line-height: 5,5px;
+    display: flex;
+
+
+}
+
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-style: italic;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 6px 12px rgba(0 , 0 , 0 , 1);
+    text-align: center;
+    display: flex;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px -6px 12px #3E7F45;
+    border-radius: 10px;
+}
+
+
+
+.box{
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(0 , 0 , 0 , 1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-image: url(https://github.com/xtaufer/ODS13img/blob/main/%E2%80%94Pngtree%E2%80%94light%20green%20watercolor_1915863.jpg?raw=true);
+    
+}
+
+
+
+html{
+    background-image: url(https://github.com/xtaufer/ODS13img/blob/main/folhas%20verde%20fonde.jpg?raw=true);
+
+}
+
+.img{
+    text-align: left;
+    display: flex;
+    margin: auto;
+}
+ 
+
+.hamburger{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #4CAF50;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+      }
+    
+      .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+      }
+    
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #3E7F45;
+        width: auto;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-list {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 0;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .nav-list a:hover {
+        color: #4CAF50;
+    }
+
+    
+
+    .slider-content{
+        width: 400%;
+        height: auto;
+        display: flex;
+    }
+
+    .slider-content input{
+        display: none;
+    }
+
+    .slider-box{
+        width: 25%;
+        height: auto;
+        position: relative;
+        text-align: center;
+    }
+    .slider-box img{
+        width: 100%;
+    }
+
+    .nav-manual, .nav-auto{
+        position: absolute;
+        width: 100%;
+        margin-top: 35%;
+        display: flex;
+        justify-content: center;
+    }
